@@ -28,9 +28,7 @@ public class Graph {
 			int w = scn.nextInt();
 			addEdge(u,v,w,graph);
 		}
-		GraphConnected instance = new GraphConnected();
-		instance.isgraphconnected(graph,new boolean[vtces],vtces);
-		System.out.println(instance.cc.size() == 1);
+		
 		
 		
 	}
