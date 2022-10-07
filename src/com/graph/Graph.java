@@ -28,6 +28,8 @@ public class Graph {
 			int w = scn.nextInt();
 			addEdge(u,v,w,graph);
 		}
+		int src = scn.nextInt();
+		int dest = scn.nextInt();
 		
 		
 		
