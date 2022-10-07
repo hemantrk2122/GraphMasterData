@@ -15,21 +15,20 @@ public class Graph {
 		}
 	}
 	public static void main(String[] args) {
-		Scanner scn = new Scanner(System.in);
-		int vtces = scn.nextInt();
-		ArrayList<Edge>[] graph = new ArrayList[vtces];
-		for(int i = 0;i<vtces;i++) {
-			graph[i] = new ArrayList<>();
-		}
-		int edge_count = scn.nextInt();
-		for(int i = 0;i<edge_count;i++) {
-			int u = scn.nextInt();
-			int v = scn.nextInt();
-			int w = scn.nextInt();
-			addEdge(u,v,w,graph);
-		}
-		int src = scn.nextInt();
-		int dest = scn.nextInt();
+//		Scanner scn = new Scanner(System.in);
+//		int vtces = scn.nextInt();
+//		ArrayList<Edge>[] graph = new ArrayList[vtces];
+//		for(int i = 0;i<vtces;i++) {
+//			graph[i] = new ArrayList<>();
+//		}
+//		int edge_count = scn.nextInt();
+//		for(int i = 0;i<edge_count;i++) {
+//			int u = scn.nextInt();
+//			int v = scn.nextInt();
+//			int w = scn.nextInt();
+//			addEdge(u,v,w,graph);
+//		}
+		
 		
 		
 		
