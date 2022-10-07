@@ -10,7 +10,7 @@ public class Graph {
 	public static void display(ArrayList<Edge>[] graph) {
 		for(int i = 0;i<graph.length;i++) {
 			for(Edge e:graph[i]){
-				System.out.println(e.u+' '+e.v+' '+e.w);
+				System.out.println(e.u+ +e.v+ +e.w);
 			}
 		}
 	}
@@ -28,9 +28,13 @@ public class Graph {
 //			int w = scn.nextInt();
 //			addEdge(u,v,w,graph);
 //		}
-		
-		
-		
-		
+		int[][] grid = {
+	    		{1,1,1,1,0},
+	    		{1,1,0,1,0},
+	    		{1,1,0,0,0},
+	    		{0,0,0,0,0}
+	    };
+	    IslandPerimiter instance = new IslandPerimiter();
+	    System.out.println(instance.islandPerimeter(grid));
 	}
 }
