@@ -26,7 +26,7 @@ public class IsGraphCyclic {
 	            return true;
 	         }
 	         vis[node] = true;
-	         for(Edge e:graph[src]){
+	         for(Edge e:graph[node]){
 	            int nbr = e.v;
 	            if(!vis[nbr]) {
 	            	q.addLast(nbr);
