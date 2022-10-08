@@ -28,11 +28,7 @@ public class Graph {
 			int w = scn.nextInt();
 			addEdge(u,v,w,graph);
 		}
-		int src = scn.nextInt();
-		int dest = scn.nextInt();
-		int malware = scn.nextInt();
-		PrintPathWithoutMalware instance = new PrintPathWithoutMalware();
-		instance.printpathwithoutmalware(graph,src,dest,malware,new boolean[vtces],src+"");
-//		https://leetcode.com/discuss/compensation/2675614/Google-or-SW-intern-or-Interview-or-BangaloreHyderabad
+		IsGraphCyclic instance = new IsGraphCyclic();
+		System.out.println(instance.isgraphcyclic(graph,vtces));
 	}
 }
