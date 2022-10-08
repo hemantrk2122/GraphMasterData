@@ -29,8 +29,10 @@ public class Graph {
 			addEdge(u,v,w,graph);
 		}
 		int src = scn.nextInt();
-		BFS instance = new BFS();
-		instance.bfs(graph,src);
-		
+		int dest = scn.nextInt();
+		int malware = scn.nextInt();
+		PrintPathWithoutMalware instance = new PrintPathWithoutMalware();
+		instance.printpathwithoutmalware(graph,src,dest,malware,new boolean[vtces],src+"");
+//		https://leetcode.com/discuss/compensation/2675614/Google-or-SW-intern-or-Interview-or-BangaloreHyderabad
 	}
 }

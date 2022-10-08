@@ -23,9 +23,9 @@ public class BFS {
 				System.out.println(node+"@"+psf);
 				for(Edge e:graph[node]) {
 					int nbr = e.v;
-					if(!vis[nbr]) {
+					
 						que.addLast(new PairBFS(nbr,psf+nbr));
-					}
+					
 				}
 			}
 			level++;
