@@ -31,6 +31,6 @@ public class Graph {
 		int src = scn.nextInt();
 		int t = scn.nextInt();
 		SpreadOfInfection instance = new SpreadOfInfection();
-		System.out.println(instance.spreadofinfection(graph,new boolean[vtces],src,t));
+		System.out.println(instance.spreadofinfection2(graph,new boolean[vtces],src,t));
 	}
 }
