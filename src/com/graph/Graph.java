@@ -15,24 +15,22 @@ public class Graph {
 		}
 	}
 	public static void main(String[] args) {
-//		Scanner scn = new Scanner(System.in);
-//		int vtces = scn.nextInt();
-//		ArrayList<Edge>[] graph = new ArrayList[vtces];
-//		for(int i = 0;i<vtces;i++) {
-//			graph[i] = new ArrayList<>();
-//		}
-//		int edge_count = scn.nextInt();
-//		for(int i = 0;i<edge_count;i++) {
-//			int u = scn.nextInt();
-//			int v = scn.nextInt();
-//			int w = scn.nextInt();
-//			addEdge(u,v,w,graph);
-//		}
-//		IsGraphCyclic instance = new IsGraphCyclic();
-//		System.out.println(instance.isgraphcyclic(graph,vtces));
-		int[][] grid = {{2,1,1},{0,1,1},{1,0,1}};
-		RottenOranges instance = new RottenOranges();
-		System.out.println(instance.rottenoranges(grid));
-//		https://leetcode.com/problems/rotting-oranges/
+		Scanner scn = new Scanner(System.in);
+		int vtces = scn.nextInt();
+		ArrayList<Edge>[] graph = new ArrayList[vtces];
+		for(int i = 0;i<vtces;i++) {
+			graph[i] = new ArrayList<>();
+		}
+		int edge_count = scn.nextInt();
+		for(int i = 0;i<edge_count;i++) {
+			int u = scn.nextInt();
+			int v = scn.nextInt();
+			int w = scn.nextInt();
+			addEdge(u,v,w,graph);
+		}
+		int src = scn.nextInt();
+		int t = scn.nextInt();
+		SpreadOfInfection instance = new SpreadOfInfection();
+		System.out.println(instance.spreadofinfection(graph,new boolean[vtces],src,t));
 	}
 }
