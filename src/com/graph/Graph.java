@@ -29,7 +29,7 @@ public class Graph {
 			addEdge(u,v,0,graph);
 		}
 		TopologicalSort instance = new TopologicalSort();
-		int[] al = (instance.toposort(graph));
+		int[] al = (instance.topoingeneral(graph));
 		for(int e:al) {
 			System.out.print(e+" ");
 		}
