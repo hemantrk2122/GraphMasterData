@@ -15,24 +15,20 @@ public class Graph {
 		}
 	}
 	public static void main(String[] args) {
-		Scanner scn = new Scanner(System.in);
-		int vtces = scn.nextInt();
-		ArrayList<Edge>[] graph = new ArrayList[vtces];
-		for(int i = 0;i<vtces;i++) {
-			graph[i] = new ArrayList<>();
-		}
-		int edge_count = scn.nextInt();
-		for(int i = 0;i<edge_count;i++) {
-			int u = scn.nextInt();
-			int v = scn.nextInt();
-//			int w = scn.nextInt();
-			addEdge(u,v,0,graph);
-		}
-		TopologicalSort instance = new TopologicalSort();
-		int[] al = (instance.topoingeneral(graph));
-		for(int e:al) {
-			System.out.print(e+" ");
-		}
-		System.out.println();
+//		Scanner scn = new Scanner(System.in);
+//		int vtces = scn.nextInt();
+//		ArrayList<Edge>[] graph = new ArrayList[vtces];
+//		for(int i = 0;i<vtces;i++) {
+//			graph[i] = new ArrayList<>();
+//		}
+//		int edge_count = scn.nextInt();
+//		for(int i = 0;i<edge_count;i++) {
+//			int u = scn.nextInt();
+//			int v = scn.nextInt();
+////			int w = scn.nextInt();
+//			addEdge(u,v,0,graph);
+//		}
+		ThreeSum instance = new ThreeSum();
+		instance.solve();
 	}
 }
