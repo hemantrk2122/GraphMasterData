@@ -30,7 +30,6 @@ public class Graph {
 		}
 		int src = scn.nextInt();
 		int dest = scn.nextInt();
-		display(graph);
 		isPath instance = new isPath();
 		System.out.println(instance.ispath(graph,src,dest,new boolean[vtces]));
 	}
